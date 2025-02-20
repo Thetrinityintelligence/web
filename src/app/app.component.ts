@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'the_shree_ram_group';
+  
+  scrollTop(){
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
 }
