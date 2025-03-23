@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../components/header/header.component';
 import { FooterComponent } from '../components/footer/footer.component';
-import { ChatComponent } from '../components/chat/chat.component';
 import { BannerComponent } from '../components/banner/banner.component';
 import { FormsModule } from '@angular/forms';
 
@@ -12,7 +11,7 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     HeaderComponent,
     FooterComponent,
-    ChatComponent,
+
     BannerComponent
   ],
   imports: [
@@ -22,7 +21,7 @@ import { FormsModule } from '@angular/forms';
   exports:[
     HeaderComponent,
     FooterComponent,
-    ChatComponent,
+
     BannerComponent
   ]
 })

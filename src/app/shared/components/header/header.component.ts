@@ -21,6 +21,7 @@ export class HeaderComponent {
     }
   }
   onMenu(menu: any) {
+    debugger
     let activeMenu = this.menus.find((x: any) => x.active);
     if (activeMenu) {
       activeMenu.active = false;

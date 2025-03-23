@@ -29,6 +29,12 @@ export const Menus = [
     menu: '/teams',
     subMenus: [],
   },
+  {
+    name: 'login',
+    value: 'login',
+    menu: '/login',
+    subMenus: [],
+  },
   // {
   //   name: 'Blog',
   //   value: 'blog',

@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FallbackSrc } from './utill/fallback-image.directive';
 import { LoaderComponent } from './components/loader/loader.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { LoaderComponent } from './components/loader/loader.component';
     ServicesComponent,
     AboutComponent,
     FallbackSrc,
-    LoaderComponent
+    LoaderComponent,
+    LoginComponent
     // HeaderComponent,
     // FooterComponent
     

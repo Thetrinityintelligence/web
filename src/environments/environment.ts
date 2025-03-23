@@ -7,8 +7,8 @@ export const environment = {
   //   serverEndpoint:'http://107.21.74.202:5000/api/',
   //   serverEndpoint:'http://13.48.43.222:5000/api/',
   // serverEndpoint:'https://tsrg-server.vercel.app/api/',
-  serverEndpoint:'http://localhost:5000/api/',
-  api:'http://localhost:5000',
+  serverEndpoint:'http://localhost:3000/api/',
+  api:'http://localhost:3000',
     razorpayKey:'rzp_test_7uz0fpp603h0XN',
     googleClientId:'737202747252-88hienbaqmlmkn1k7qdmeee4mvn9a3j7.apps.googleusercontent.com',
     firebaseConfig: {
