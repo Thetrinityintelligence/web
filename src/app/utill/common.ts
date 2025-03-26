@@ -24,12 +24,6 @@ export const Menus = [
     subMenus: [],
   },
   {
-    name: 'Teams',
-    value: 'teams',
-    menu: '/teams',
-    subMenus: [],
-  },
-  {
     name: 'login',
     value: 'login',
     menu: '/login',

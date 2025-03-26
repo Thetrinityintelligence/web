@@ -8,7 +8,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
-import { TeamsComponent } from './components/teams/teams.component';
 import { ClientsComponent } from './components/clients/clients.component';
 import { ServicesComponent } from './components/services/services.component';
 import { AboutComponent } from './components/about/about.component';
@@ -25,7 +24,6 @@ import { LoginComponent } from './components/login/login.component';
     AppComponent,
     HomeComponent,
     ContactUsComponent,
-    TeamsComponent,
     ClientsComponent,
     ServicesComponent,
     AboutComponent,

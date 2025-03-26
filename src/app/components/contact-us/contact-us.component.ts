@@ -35,9 +35,12 @@ export class ContactUsComponent implements OnInit {
         (res: any) => {
           this.showLoader = false;
           this.contactForm.reset();
+          alert('Message sent successfully!'); // Add success message
         },
-        () => {
+        (error) => {
           this.showLoader = false;
+          console.error('Error sending message:', error); // Log error
+          alert('Failed to send message. Please try again.'); // Add error message
         }
       );
     } else {

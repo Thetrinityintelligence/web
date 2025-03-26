@@ -19,9 +19,6 @@ export class HttpService {
   public getAllClients() {
     return this.http.get(environment.serverEndpoint+URL.GET_ALL_CLIENTS);
   }
-  public getAllTeams() {
-    return this.http.get(environment.serverEndpoint+URL.GET_ALL_TEAMS);
-  }
   public sendMessage(msgBody:any) {
     return this.http.post(environment.serverEndpoint+URL.SEND_MSG,msgBody);
   }
