@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { HttpService } from 'src/app/services/http.service';
+import { STATUS_CODE } from 'src/app/utill/common';
 
 @Component({
   selector: 'app-about',
@@ -63,39 +64,41 @@ export class AboutComponent {
       src: 'https://images.pexels.com/photos/4725133/pexels-photo-4725133.jpeg',
     },
   ];
-  clients:any[]=[
+  clients: any[] = [
     {
-      id:1,
-      img:'assets/img/clients/client-1.png'
+      id: 1,
+      img: 'assets/img/clients/client-1.png',
     },
     {
-      id:2,
-      img:'assets/img/clients/client-2.png'
+      id: 2,
+      img: 'assets/img/clients/client-2.png',
     },
     {
-      id:3,
-      img:'assets/img/clients/client-3.png'
+      id: 3,
+      img: 'assets/img/clients/client-3.png',
     },
     {
-      id:4,
-      img:'assets/img/clients/client-4.png'
+      id: 4,
+      img: 'assets/img/clients/client-4.png',
     },
     {
-      id:5,
-      img:'assets/img/clients/client-5.png'
+      id: 5,
+      img: 'assets/img/clients/client-5.png',
     },
     {
-      id:6,
-      img:'assets/img/clients/client-6.png'
+      id: 6,
+      img: 'assets/img/clients/client-6.png',
     },
     {
-      id:7,
-      img:'assets/img/clients/client-7.png'
+      id: 7,
+      img: 'assets/img/clients/client-7.png',
     },
-  ]
+  ];
+  clientsList: any = [];
   constructor(private httpService: HttpService) {
     window.scrollTo(0, 0);
     this.getRatings();
+    this.getAllClients();
   }
   getRatings() {
     this.httpService.getRating().subscribe((res: any) => {
@@ -110,5 +113,11 @@ export class AboutComponent {
       }
     });
   }
-
+  getAllClients() {
+    this.httpService.getAllClients().subscribe((res: any) => {
+      if (res.statusCode == STATUS_CODE.SUCCESS) {
+        this.clientsList = res.data;
+      }
+    });
+  }
 }

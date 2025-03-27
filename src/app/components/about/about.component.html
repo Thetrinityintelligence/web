@@ -103,18 +103,18 @@
   </section><!-- /Stats Section -->
 
   <!-- Clients Section -->
-  <section id="clients" class="clients section">
+  <section id="clients" class="clients section" *ngIf="clientsList.length > 0">
 
     <div class="container">
       <owl-carousel-o [options]="customOptions">
 
-        <ng-container *ngFor="let client of clients">
+        <ng-container *ngFor="let client of clientsList">
           <ng-template class="slide" carouselSlide>
             <div class="slider">
               <div class="swiper-slide">
                 <div class="card">
                   <div class="card-body">
-                    <img fallback-src [src]="client.jpg" class="img-fluid" style="height: 100px;" alt="">
+                    <img  [src]="client.clientImage" class="img-fluid" style="height: 100px;" alt="">
                   </div>
                 </div>
               </div>
@@ -208,7 +208,7 @@
     <!-- <div class="container section-title" data-aos="fade-up">
       <h2>Testimonials</h2>
       <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div><!-- End Section Title -->
+    </div> End Section Title -->
 
     <!-- <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -227,7 +227,7 @@
                 "clickable": true
               }
             }
-          </script> --> -->
+          </script> --> 
         <!-- Slider main container -->
         <!-- <owl-carousel-o [options]="customOptions">
 

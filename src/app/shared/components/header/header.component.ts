@@ -8,6 +8,7 @@ import { Menus } from '../../../utill/common';
 })
 export class HeaderComponent {
   menus: any = Menus;
+  isNavbarOpen = false; // Track menu state
   constructor(private router: Router) {
     console.log('this.router.url::', this.router.url);
     window.location.pathname;
@@ -21,12 +22,16 @@ export class HeaderComponent {
     }
   }
   onMenu(menu: any) {
-    debugger
     let activeMenu = this.menus.find((x: any) => x.active);
     if (activeMenu) {
       activeMenu.active = false;
     }
     menu.active = true;
     this.router.navigate([menu.menu]);
+  }
+
+
+  toggleNavbar() {
+    this.isNavbarOpen = !this.isNavbarOpen;
   }
 }
