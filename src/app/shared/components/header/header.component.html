@@ -1,33 +1,33 @@
-<header id="header" class="header d-flex align-items-center fixed-top" style="--background-color: #1e4356;">
+<header id="header" class="header d-flex align-items-center fixed-top" style="--background-color: #0a7aad !important;">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
         <a href="index.html" class="logo d-flex align-items-center" *ngIf="!isNavbarOpen">
             <img src="assets/img/tsrg_logo_transparent.png" alt="">
-            <h1 class="sitename" >The Shree Ram Group</h1>
+            <h1 class="sitename">The Shree Ram Group</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
             <ul>
-                <li style="cursor: pointer;" *ngFor="let menu of menus" (click)="onMenu(menu)" 
+                <li style="cursor: pointer;" *ngFor="let menu of menus" (click)="onMenu(menu)"
                     [ngClass]="menu.active ? 'active' : ''">
                     <a>{{menu?.name}}</a>
                 </li>
             </ul>
-            
+
             <!-- Mobile Toggle Button -->
             <i class="mobile-nav-toggle d-xl-none bi bi-list" (click)="toggleNavbar()"></i>
-        
+
             <!-- Mobile Menu -->
             <div [ngClass]="{'show': isNavbarOpen, 'collapse': true, 'navbar-collapse': true}" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <li style="cursor: pointer;" *ngFor="let menu of menus" (click)="onMenu(menu)" 
-                    [ngClass]="menu.active ? 'active' : ''">
-                    <a>{{menu?.name}}</a>
-                </li>
+                    <li style="cursor: pointer;" *ngFor="let menu of menus" (click)="onMenu(menu)"
+                        [ngClass]="menu.active ? 'active' : ''">
+                        <a>{{menu?.name}}</a>
+                    </li>
                 </div>
             </div>
         </nav>
-        
+
         <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <a class="navbar-brand" href="#">Jatitree</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-alt" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
