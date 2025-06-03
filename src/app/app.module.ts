@@ -18,6 +18,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FallbackSrc } from './utill/fallback-image.directive';
 import { LoaderComponent } from './components/loader/loader.component';
 import { LoginComponent } from './components/login/login.component';
+import { CommonModule } from '@angular/common';
+import { TeamsComponent } from './components/teams/teams.component';
 
 @NgModule({
   declarations: [
@@ -29,9 +31,8 @@ import { LoginComponent } from './components/login/login.component';
     AboutComponent,
     FallbackSrc,
     LoaderComponent,
-    LoginComponent
-    // HeaderComponent,
-    // FooterComponent
+    LoginComponent,
+    TeamsComponent
     
   ],
   imports: [
@@ -40,7 +41,7 @@ import { LoginComponent } from './components/login/login.component';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    
+    CommonModule,
     SharedModule,
     RouterModule,
     HttpClientModule,

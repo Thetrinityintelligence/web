@@ -24,6 +24,12 @@ export const Menus = [
     subMenus: [],
   },
   {
+    name: 'Teams',
+    value: 'teams',
+    menu: '/teams',
+    subMenus: [],
+  },
+  {
     name: 'login',
     value: 'login',
     menu: '/login',
@@ -52,6 +58,7 @@ export const URL={
   GET_ALL_CLIENTS:'user-clients/getAll-active',
   GET_ALL_TEAMS:'user-teams/getAll-active',
   SEND_MSG:'contacts/send-msg',
+  GET_ALL_BANNER:'user-banner/getAll',
 
 
 }

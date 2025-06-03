@@ -7,19 +7,25 @@ import { URL } from '../utill/common';
   providedIn: 'root',
 })
 export class HttpService {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   public getRating() {
-    return this.http.get(environment.serverEndpoint+URL.GET_RATING);
+    return this.http.get(environment.serverEndpoint + URL.GET_RATING);
   }
 
   public getAllServices() {
-    return this.http.get(environment.serverEndpoint+URL.GET_ALL_SERVICES);
+    return this.http.get(environment.serverEndpoint + URL.GET_ALL_SERVICES);
   }
   public getAllClients() {
-    return this.http.get(environment.serverEndpoint+URL.GET_ALL_CLIENTS);
+    return this.http.get(environment.serverEndpoint + URL.GET_ALL_CLIENTS);
   }
-  public sendMessage(msgBody:any) {
-    return this.http.post(environment.serverEndpoint+URL.SEND_MSG,msgBody);
+  public getAllTeams() {
+    return this.http.get(environment.serverEndpoint + URL.GET_ALL_TEAMS);
+  }
+  public sendMessage(msgBody: any) {
+    return this.http.post(environment.serverEndpoint + URL.SEND_MSG, msgBody);
+  }
+  public getAllBanners() {
+    return this.http.get(environment.serverEndpoint + URL.GET_ALL_BANNER);
   }
 }

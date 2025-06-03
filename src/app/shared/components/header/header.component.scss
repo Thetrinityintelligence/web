@@ -6,11 +6,17 @@
 
  .sitename {
      color: #0a7aad !important;
+
+     :hover {
+         color: #504e55 !important;
+     }
  }
 
  .navmenu li {
      color: #0a7aad !important;
  }
+
+
 
  .navmenu li:hover>a,
  .navmenu .active,

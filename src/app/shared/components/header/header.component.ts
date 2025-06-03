@@ -10,8 +10,6 @@ export class HeaderComponent {
   menus: any = Menus;
   isNavbarOpen = false; // Track menu state
   constructor(private router: Router) {
-    console.log('this.router.url::', this.router.url);
-    window.location.pathname;
     let activeMenu = this.menus.find(
       (x: any) => x.menu === window.location.pathname
     );
