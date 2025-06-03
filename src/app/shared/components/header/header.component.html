@@ -1,10 +1,14 @@
-<header id="header" class="header d-flex align-items-center fixed-top" style="--background-color: #0a7aad !important;">
+<header id="header" class="header d-flex align-items-center fixed-top" style="--background-color: #ffffff !important;">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
         <a href="index.html" class="logo d-flex align-items-center" *ngIf="!isNavbarOpen">
-            <img src="assets/img/tsrg_logo_transparent.png" alt="">
-            <h1 class="sitename">The Shree Ram Group</h1>
+            <img src="assets/img/TSRG Logo Tranparent.png" class="logo-image">
+            <div class="text-left">
+                <h1 class="text-2xl sm:text-3xl font-bold" class="sitename" style="display: flex; flex-direction: column;">The Shree Ram Group</h1>
+                <p class="size-lo">Your Vision is Our Mission</p>
+            </div>
         </a>
+
 
         <nav id="navmenu" class="navmenu">
             <ul>
@@ -23,10 +27,14 @@
                     <li style="cursor: pointer;" *ngFor="let menu of menus" (click)="onMenu(menu)"
                         [ngClass]="menu.active ? 'active' : ''">
                         <a>{{menu?.name}}</a>
+                        
                     </li>
                 </div>
             </div>
         </nav>
+    
+       
+
 
         <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <a class="navbar-brand" href="#">Jatitree</a>

@@ -5,11 +5,11 @@
  }
 
  .sitename {
-     color: #504e55 !important;
+     color: #0a7aad !important;
  }
 
  .navmenu li {
-     color: white !important;
+     color: #0a7aad !important;
  }
 
  .navmenu li:hover>a,
@@ -22,3 +22,32 @@
      color: #504e55 !important;
 
  }
+ .size-lo
+ {
+    color: #504e55 !important;
+ }
+ .logo-image
+ {
+    width: 50px; 
+    height: auto;
+ }
+ /* Styles for the text block container */
+.text-left {
+    display: flex;             /* Make this div a flex container */
+    flex-direction: column;    /* Stack its children (h1 and p) vertically */
+    justify-content: flex-start;   /* Vertically center the h1 and p within this div */
+    margin-left: 0px;         /* Provides spacing from the logo; adjust as needed */
+                               /* You can also use Tailwind's gap utility on the parent <a> if you prefer */
+  }
+  
+  /* Styles for "The Shree Ram Group" heading */
+  .text-left > h1.sitename {
+    margin-top: 0;             /* Remove any default top margin */
+    margin-bottom: 0rem;     /* Small space between the heading and the tagline; adjust as needed */
+  }
+  
+  /* Styles for the tagline paragraph */
+  .text-left > p.size-lo {
+    margin-top: 0.3;             /* Remove any default top margin */
+    margin-bottom: 0;          /* Remove any default bottom margin */
+  }
