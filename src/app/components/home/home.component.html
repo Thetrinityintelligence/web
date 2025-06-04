@@ -57,19 +57,19 @@
 
     <div class="container">
 
-      <div class="row gy-4">
-        <div class="col-lg-3 col-md-6" *ngFor="let cardInfo of homePageCards; let i=index;let isEven = even; let isOdd = odd">
+      <div class="row gy-4" >
+        <div class="col-lg-3 col-md-6"  *ngFor="let cardInfo of homePageCards; let i=index;let isEven = even; let isOdd = odd">
           <div [ngClass]="getClass(isEven,cardInfo)"  (click)="cardInfo.showMore">
-            <div class="icon">
+            <div class="icon"  >
               <i [class]="cardInfo.icon"></i>
             </div>
             <a class="stretched-link">
-              <h3>{{cardInfo.title}}</h3>
+              <h3 style="color: #0a7aad;">{{cardInfo.title}}</h3>
             </a>
             <p>
               {{(cardInfo.showMore) ? cardInfo.desc : cardInfo.desc | slice:0:300}} <span *ngIf="!cardInfo.showMore">...</span> 
-              <a href="javascript:;" *ngIf="!cardInfo.showMore" (click)="cardInfo.showMore=true">Show More</a>
-              <a href="javascript:;" *ngIf="cardInfo.showMore" (click)="cardInfo.showMore=false">Show Less</a>
+              <a href="javascript:;" *ngIf="!cardInfo.showMore" (click)="cardInfo.showMore=true" style="color: #0a7aad;">Show More</a>
+              <a href="javascript:;" *ngIf="cardInfo.showMore" (click)="cardInfo.showMore=false" style="color: #0a7aad;">Show Less</a>
               </p>
           </div>
         </div>
@@ -133,7 +133,7 @@
         </div>
         <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
           <h3>Vision</h3>
-          <p class="fst-italic">
+          <p >
             To be the most preferred customer-centric company in India, delivering  innovative  and  flexible  industrial outsourcing solutions that drive  sustainable growth  for our clients while simultaneously enhancing the  well-being and professional development  of our workforce.
           </p>
           <!-- <ul>
@@ -150,7 +150,7 @@
         </div>
         <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
           <h3>Mission</h3>
-          <p class="fst-italic">
+          <p >
             Forging a new era of industrial outsourcing in India, empowering businesses to thrive and empowering our workforce to flourish.  We envision a future where INR 10,000 Crores in turnover, 20+ states of presence, and 100% customer satisfaction are not just targets, but a testament to our commitment by 2031.
           </p>
         </div>
@@ -178,7 +178,7 @@
         </div>
         <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
           <h3>Multiple Firms Under One Group</h3>
-          <p class="fst-italic">
+          <p >
             We utilise a flexible distribution channel, leveraging multiple specialised firms and a large team to manage a wide range of operations, ensuring adaptability to diverse client requirements.
 
           </p>

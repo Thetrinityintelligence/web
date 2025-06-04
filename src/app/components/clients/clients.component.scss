@@ -10,3 +10,26 @@
  .imginmiddle{
     margin: 0 190px !important;
  }
+ .in-all
+{
+    color: white !important;
+}
+.text-container {
+    width: 100%;
+    flex-shrink: 0; /* Prevents the text container from shrinking */
+  }
+  
+  .box-text {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #504e55;
+    font-weight: 500;
+    padding-top: 8px; /* Add some space specifically above the text, if needed */
+    /* The text-align: center from .item-box will handle centering */
+    /* overflow, text-overflow, white-space from previous suggestion if needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* If you want single line names */
+    /* If you allow multi-line names, remove white-space: nowrap and adjust height of .item-box */
+  }
