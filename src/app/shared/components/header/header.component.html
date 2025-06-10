@@ -19,12 +19,12 @@
             </ul>
 
             <!-- Mobile Toggle Button -->
-            <i class="mobile-nav-toggle d-xl-none bi bi-list" (click)="toggleNavbar()"></i>
+            <i class="mobile-nav-toggle d-xl-none" [ngClass]="!isNavbarOpen ? 'bi bi-list' : 'bi bi-x' " (click)="toggleNavbar()"></i>
 
             <!-- Mobile Menu -->
             <div [ngClass]="{'show': isNavbarOpen, 'collapse': true, 'navbar-collapse': true}" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <li style="cursor: pointer;" *ngFor="let menu of menus" (click)="onMenu(menu)"
+                    <li style="cursor: pointer;" *ngFor="let menu of menus" (click)="onMenuMobile(menu)"
                         [ngClass]="menu.active ? 'active' : ''">
                         <a>{{menu?.name}}</a>
                         

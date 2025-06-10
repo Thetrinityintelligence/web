@@ -30,6 +30,9 @@
             <p>{{team?.teamDesc}}</p>
           </div>
         </div>
+        <div *ngIf="teamsList.length==0" class="text-center">
+        <h2>{{constant.NO_RECORDS_FOUND}}</h2>
+        </div>
       </div>
 
     </div>

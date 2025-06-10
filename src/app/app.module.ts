@@ -20,6 +20,7 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { LoginComponent } from './components/login/login.component';
 import { CommonModule } from '@angular/common';
 import { TeamsComponent } from './components/teams/teams.component';
+import { WildCardComponent } from './components/wild-card/wild-card.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { TeamsComponent } from './components/teams/teams.component';
     FallbackSrc,
     LoaderComponent,
     LoginComponent,
-    TeamsComponent
+    TeamsComponent,
+    WildCardComponent
     
   ],
   imports: [

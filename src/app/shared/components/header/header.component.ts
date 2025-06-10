@@ -32,4 +32,13 @@ export class HeaderComponent {
   toggleNavbar() {
     this.isNavbarOpen = !this.isNavbarOpen;
   }
+  onMenuMobile(menu:any){
+    let activeMenu = this.menus.find((x: any) => x.active);
+    if (activeMenu) {
+      activeMenu.active = false;
+    }
+    menu.active = true;
+    this.isNavbarOpen=!this.isNavbarOpen;
+    this.router.navigate([menu.menu]);
+  }
 }

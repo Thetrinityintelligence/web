@@ -62,3 +62,6 @@ export const URL={
 
 
 }
+export const CONSTANT={
+  NO_RECORDS_FOUND:'No Records Found'
+}

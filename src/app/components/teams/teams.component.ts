@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpService } from 'src/app/services/http.service';
-import { STATUS_CODE } from 'src/app/utill/common';
+import { CONSTANT, STATUS_CODE } from 'src/app/utill/common';
 import * as _ from 'lodash'
 @Component({
     selector: 'app-teams',
@@ -9,6 +9,7 @@ import * as _ from 'lodash'
 })
 export class TeamsComponent {
     teamsList: any[] = [];
+    constant=CONSTANT;
     constructor(private httpServices: HttpService) {
         window.scrollTo(0, 0);
     }

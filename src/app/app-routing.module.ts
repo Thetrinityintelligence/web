@@ -7,6 +7,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ServicesComponent } from './components/services/services.component';
 import { LoginComponent } from './components/login/login.component';
 import { TeamsComponent } from './components/teams/teams.component';
+import { WildCardComponent } from './components/wild-card/wild-card.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,10 @@ const routes: Routes = [
     path: 'login',
     component: LoginComponent,
   },
+  {
+    path:'**',
+    component:WildCardComponent
+  }
 ];
 
 @NgModule({

@@ -1,8 +1,53 @@
-.blog-posts .post-img {
-    margin: 0 !important;
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  min-height: 250px;
+  text-align: center;
 }
+
+/* Image Container */
+.post-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 1rem;
+}
+
 .post-img img {
-    width: 200px;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Client Name */
+.post-category {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Description (optional) */
+.title {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+  min-height: 40px;
+}
+
+.post-meta {
+  font-size: 0.8rem;
+  color: #888;
 }
  a {
     text-decoration: none !important;

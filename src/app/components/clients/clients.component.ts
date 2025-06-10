@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from 'src/app/services/http.service';
-import { STATUS_CODE } from 'src/app/utill/common';
+import { STATUS_CODE,CONSTANT } from 'src/app/utill/common';
 
 @Component({
   selector: 'app-clients',
@@ -9,6 +9,7 @@ import { STATUS_CODE } from 'src/app/utill/common';
 })
 export class ClientsComponent implements OnInit {
   clientsList: any[] = [];
+  constant=CONSTANT;
   constructor(private httpServices: HttpService) {
     window.scrollTo(0, 0);
   }
